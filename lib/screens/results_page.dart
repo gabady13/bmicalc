@@ -25,7 +25,7 @@ class ResultsPage extends StatelessWidget {
             child: Container(
               padding: EdgeInsets.all(15.0),
               alignment: Alignment.bottomLeft,
-              child: Text(bmiResult, style: kTitleTextStyle,),
+              child: Text('Your Result', style: kTitleTextStyle,),
             ),
           ),
           Expanded(
@@ -36,11 +36,11 @@ class ResultsPage extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
              children: <Widget>[
                Text(
-                 resultText.toUpperCase(),
+                 bmiResult,
                  style: kResultTextStyle,
                ),
                Text(
-                 '18.3',
+                 resultText.toUpperCase(),
                  style: kBMITextStyle,
                ),
                Text(
